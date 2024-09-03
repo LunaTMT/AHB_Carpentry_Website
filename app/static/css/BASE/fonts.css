@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'NEOTERIC_BOLD';
+    src: url('../../fonts/NEOTERIC_BOLD.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEOTERIC_REGULAR';
+    src: url('../../fonts/NEOTERIC_REGULAR.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.dosis-header {
+  font-family: 'Dosis', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+  
+.dosis-text {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+  
+.dosis-text .required {
+    color: rgba(159, 153, 153, 0.82); 
+    font-size: 0.8em; 
+    margin-left: 5px; 
+}
+
+.quicksand-text {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+  .italic {
+    font-style: italic;
+}

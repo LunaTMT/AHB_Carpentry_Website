@@ -1,0 +1,76 @@
+<div id="work-with-us-container">
+
+    <div id="left-inner-container">
+        <h3>WE WOULD LOVE TO WORK WITH YOU</h3>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <form method="POST" action="{{ url_for('AHB.send_email') }}" id="overlay-form">
+            {{ form.hidden_tag() }}
+
+          
+
+            <div id="form-name-container">
+                
+
+                
+                <div class="form-group dosis-text">
+                    <p class="dosis-text">First Name</p>
+                    {{ form.first_name(class="form-control") }}
+                    {% for error in form.first_name.errors %}
+                        <span style="color: red;">{{ error }}</span>
+                    {% endfor %}
+                </div>
+
+                
+                <div class="form-group dosis-text">
+                    <p class="dosis-text">Surname</p>
+                    {{ form.last_name(class="form-control") }}
+                    {% for error in form.last_name.errors %}
+                        <span style="color: red;">{{ error }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+
+            
+            <div class="form-group dosis-text">
+                <p class="dosis-text">Email Address </p>
+                {{ form.email(class="form-control") }}
+                {% for error in form.email.errors %}
+                    <span style="color: red;">{{ error }}</span>
+                {% endfor %}
+            </div>
+            
+            
+            <div class="form-group dosis-text" id="message-container">
+                <p class="dosis-text">Message</p>
+                {{ form.message(class="form-control", rows=5) }}
+                {% for error in form.message.errors %}
+                    <span style="color: red;">{{ error }}</span>
+                {% endfor %}
+            </div>
+
+            <div id="submit-button-container">
+                <button type="submit" id="submit-button" class="button dosis-header">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="right-inner-container">
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19770.93356781253!2d0.6580779354702785!3d51.7263279820135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8de18ab1598d5%3A0x9a2e9db7f07dcd2a!2z0JzQvtC70LTQvtC9LCDQnNCw0LvQtNC-0L0!5e0!3m2!1sru!2suk!4v1722965967203!5m2!1sru!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        <div id="text-container">
+            <p class="dosis-text">+44 7534 005907</p>
+            <p class="dosis-text">ahbcarpentry@gmail.com</p>
+        </div>
+    </div>
+
+</div>

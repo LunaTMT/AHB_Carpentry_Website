@@ -1,0 +1,39 @@
+{
+    "services": [
+        {
+            "name": "Skirting",
+            "description": "Installation of skirting boards to enhance the look of your rooms.",
+            "image": "skirting2.png"
+        },
+        {
+            "name": "Architrave",
+            "description": "Fitting architraves around doors and windows for a neat finish.",
+            "image": "architrave2.png"
+        },
+        {
+            "name": "Door linings",
+            "description": "Providing and installing door linings for a proper door fitting.",
+            "image": "door_linings2.png"
+        },
+        {
+            "name": "Door Fitting",
+            "description": "Expert fitting and adjusting of doors for smooth and ease of usability.",
+            "image": "door_fitting2.png"
+        },
+        {
+            "name": "Wooden Panelling",
+            "description": "Decorative panelling to add character to your interiors.",
+            "image": "panelling.png"
+        },
+        {
+            "name": "Laminate Flooring",
+            "description": "Installing durable and stylish laminate flooring.",
+            "image": "laminate_flooring2.png"
+        },
+        {
+            "name": "Wooden flooring",
+            "description": "High-quality wooden flooring installation for a classic look.",
+            "image": "wooden_flooring4.png"
+        }
+    ]
+}

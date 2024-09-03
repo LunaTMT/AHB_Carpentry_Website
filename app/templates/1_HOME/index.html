@@ -1,0 +1,31 @@
+{% extends "BASE/base.html" %}
+
+{% block title %}Home - AHB{% endblock %}
+
+{% block styles %} 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/1_HOME/1_slideshow.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/1_HOME/2_info.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/1_HOME/3_logo1.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/1_HOME/4_what_we_do.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/1_HOME/5_logo2.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/1_HOME/6_portfolio.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/BASE/instagram_container.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/1_HOME/8_work_with_us.css') }}">
+{% endblock %}
+
+{% block content %}
+        {% include '1_HOME/1_slideshow.html' %}
+        {% include '1_HOME/2_info.html' %}
+        {% include '1_HOME/3_logo1.html' %}
+        {% include '1_HOME/4_what_we_do.html' %}
+        {% include '1_HOME/5_logo2.html' %}
+        {% include '1_HOME/6_portfolio.html' %}
+        {% include '1_HOME/7_instagram.html' %}
+        {% include '1_HOME/8_work_with_us.html' %}
+{% endblock %}
+
+
+
+{% block script %}
+    <script src="{{ url_for('static', filename='js/slideshow.js') }}"></script>
+{% endblock %}

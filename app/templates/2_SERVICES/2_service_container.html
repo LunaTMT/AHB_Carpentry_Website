@@ -1,0 +1,17 @@
+
+<div id="services-container">   
+    {% for service in services %}
+        <div id="service-container">
+            
+            <img src="{{ url_for('static', filename='images/services/' ~ service.image) }}" alt="{{ service.name }}">
+            
+            <div id="service-text-container">
+                <h2>{{ service.name }}</h2>
+                <p class="invisible quicksand-text">{{ service.description }}</p>
+            </div>
+
+        </div>
+        
+    {% endfor %}
+</div>
+

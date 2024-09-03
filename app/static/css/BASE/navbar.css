@@ -1,0 +1,192 @@
+/* Base Styles */
+.navbar-menu {
+    width: 100vw;
+    height: 12vh;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar-item {
+    list-style: none;
+}
+
+.navbar-item a {
+    text-decoration: none;
+    color: black;
+    font-family: 'NEOTERIC_REGULAR';
+    font-size: 20px;
+    padding-bottom: 5px;
+    display: inline-block; /* Ensure text can be scaled without affecting layout */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transitions for scaling */
+}
+
+/* Hover effects */
+.navbar-item a:hover {
+    transform: scale(1.1); /* Scale up text without affecting layout */
+}
+
+.navbar-item a:hover::after {
+    width: 100%; /* Expand the underline to the full width on hover */
+}
+
+
+
+/* Media Queries */
+
+/* Start with the smallest screen size first */
+@media only screen and (min-width: 0px) {
+    .navbar-item a {
+        font-size: 17px;
+    }
+
+    .navbar-menu {
+        gap: 17px;
+    }
+
+    .navbar-menu img{
+        display: none;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 320px) {
+    .navbar-item a {
+        font-size: 16px;
+    }
+
+    .navbar-menu {
+        gap: 15px;
+    }
+
+
+
+}
+
+
+@media only screen and (min-width: 375px) {
+    .navbar-item a {
+        font-size: 15px;
+    }
+
+    .navbar-menu {
+        gap: 10px;
+    }
+
+    .navbar-menu img{
+        width: 100px;
+        height: auto;
+        display: block;
+    }
+
+}
+
+
+
+
+/* Large mobile devices (Google Pixel 4) */
+@media only screen and (min-width: 600px) {
+    .navbar-item a {
+        font-size: 17px;
+    }
+
+    .navbar-menu {
+        gap: 10px;
+    }
+
+    .navbar-menu img{
+        width: 125px;
+        height: auto;
+    }
+}
+
+/* Large mobile devices (Google Pixel 4) */
+@media only screen and (min-width: 768px) {
+    .navbar-item a {
+        font-size: 18px;
+    }
+
+    .navbar-menu {
+        gap: 20px;
+    }
+
+    .navbar-menu img{
+        width: 130px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .navbar-item a {
+        font-size: 20px;
+    }
+
+    .navbar-menu {
+        gap: 20px;
+    }
+
+
+    .navbar-menu img{
+        width: 150px;
+        height: auto;
+    }
+}
+
+
+
+/* Large mobile devices (Google Pixel 4) */
+@media only screen and (min-width: 1440px) {
+
+    .navbar-menu {
+        gap: 20px;
+    }
+
+    .navbar-menu img{
+        width: 175px;
+        height: auto;
+    }
+
+}
+
+
+
+/* Large mobile devices (Google Pixel 4) */
+@media only screen and (min-width: 1920px) {
+    .navbar-item a {
+        font-size: 25px;
+    }
+
+    .navbar-menu {
+        gap: 30px;
+    }
+
+    .navbar-menu img{
+        width: 200px;
+        height: auto;
+    }
+}
+
+
+/*
+
+600px: Small tablets or large phones (portrait mode).
+768px: Standard tablets (iPad portrait mode).
+1024px: Tablets (iPad landscape mode).
+Laptops/Desktops (Large Screens)
+
+1024px: Small laptops (older netbooks).
+1280px: Standard desktops and laptops (13" laptops).
+1440px: Larger desktops and laptops (15" and 16" laptops).
+1920px: Full HD monitors (common desktop monitors).
+
+*/
+
+
+

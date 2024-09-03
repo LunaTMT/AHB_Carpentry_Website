@@ -1,0 +1,72 @@
+#portfolio-container {
+    width: 90%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2); /* 90% opacity */
+    border-top: 2px solid rgba(0, 0, 0, 0.2); /* 90% opacity */
+    margin-top: 40px;   
+}
+
+
+#portfolio-container a {
+ 
+    font-size: 20px;
+    border: 2px solid black;
+    background-color: transparent; /* Initial background color */
+    color: black; /* Initial text color */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Transition effect */
+    
+    text-decoration: none;
+    display: flex;          
+    justify-content: center; 
+    align-items: center;    
+}
+
+#portfolio-container a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+@media only screen and (min-width: 0px) {
+    #portfolio-container a {
+        width: 150px;
+        height: 60px;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+    #portfolio-container {
+        height: 18vh;
+    }
+
+}
+
+
+@media only screen and (min-width: 1440px) {
+
+    #portfolio-container {
+        width: 50%;
+        height: 20vh;
+    }
+
+    #portfolio-container a {
+        width: 200px;
+        height: 70px;
+    }
+}
+
+
+@media only screen and (min-width: 1920px) {
+    #portfolio-container a {
+        width: 250px;
+        height: 100px;
+        font-size: 25px;
+    }
+
+}

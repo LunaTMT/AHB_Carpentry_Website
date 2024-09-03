@@ -1,0 +1,71 @@
+<div id="work-with-us-container">
+    <img src="{{ url_for('static', filename='images/stock/workshop-background.jpg') }}" alt="Blended work photo">
+    
+    <div id="work-with-us-inner-container">
+
+        <div id=work-with-us-inner-top-container>
+            <h1>WORK WITH US</h1>
+            <br>
+            <p class="quicksand-text">Fill the form or send us an email to ahbcarpentry@gmail.com</p>
+            <br>
+        </div>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+    
+        <form method="POST" action="{{ url_for('AHB.send_email') }}" id="overlay-form">
+            {{ form.hidden_tag() }}
+
+            <p class="dosis-text">Name <span style="font-size: 20px; filter: brightness(0.6);">(required)</span></p>
+
+            <div id="form-name-container">
+                
+                <div class="form-group dosis-text">
+                    {{ form.first_name.label }}
+                    {{ form.first_name(class="form-control") }}<br>
+                    {% for error in form.first_name.errors %}
+                        <span style="color: red;">{{ error }}</span><br>
+                    {% endfor %}
+                </div>
+
+                <div class="form-group dosis-text">
+                    {{ form.last_name.label }}
+                    {{ form.last_name(class="form-control") }}<br>
+                    {% for error in form.last_name.errors %}
+                        <span style="color: red;">{{ error }}</span><br>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <p class="dosis-text" id="email-address">Email Address  <span style="font-size: 20px; filter: brightness(0.6);">(required)</span></p>
+            <div class="form-group dosis-text">
+                {{ form.email(class="form-control") }}<br>
+                {% for error in form.email.errors %}
+                    <span style="color: red;">{{ error }}</span><br>
+                {% endfor %}
+            </div>
+            
+            <p class="dosis-text" id="message">Message <span style="font-size: 20px; filter: brightness(0.6);">(required)</span></p>
+            <div class="form-group dosis-text"  id="message-container">
+                {{ form.message(class="form-control", rows=5) }}<br>
+                {% for error in form.message.errors %}
+                    <span style="color: red;">{{ error }}</span><br>
+                {% endfor %}
+            </div>
+
+            <div id="submit-button-container">
+                <button class="button dosis-header">SUBMIT</button>
+            </div>
+        </form>
+
+        
+    </div>
+</div>

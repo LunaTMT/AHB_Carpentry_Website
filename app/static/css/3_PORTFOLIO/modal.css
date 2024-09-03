@@ -1,0 +1,58 @@
+/* Style the modal (hidden by default) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+    
+}
+
+/* Modal Content */
+.modal-content {
+    max-width: 90%; /* Max width of the image */
+    max-height: 80%; /* Max height of the image */
+    margin: auto;
+    display: block;
+}
+
+/* Caption of Modal */
+#caption {
+    margin: auto;
+    display: block;
+    width: 90%; /* Adjust width as needed */
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Thumbnails */
+.thumbnail {
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.thumbnail:hover {
+    opacity: 0.7; /* Adjust transparency level on hover */
+}

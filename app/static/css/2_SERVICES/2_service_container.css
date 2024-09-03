@@ -1,0 +1,177 @@
+
+#services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+#service-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}   
+
+#service-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+
+
+#service-container img {
+    border-radius: 5px;
+}
+
+#service-text-container h2 {
+    text-align: center;
+}
+
+#service-text-container p {
+    text-align: center;
+    display: none;
+}
+
+
+#service-container:hover .invisible {
+    opacity: 1; 
+}
+
+
+
+
+
+@media only screen and (min-width: 0px) {
+    #services-container{
+        height: 2000px;
+    }
+
+    #service-container {
+        margin-bottom: 30px;
+    }
+
+    #service-container img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #service-text-container {
+        height: 10%;
+    }
+
+    #service-text-container h2 {
+        margin-top: 10px;
+    }
+    
+}
+
+
+@media only screen and (min-width: 600px) {
+
+
+    #services-container {
+        width: 10%;
+        height: 450px;
+    }
+
+    #service-container {
+        width: 25%;
+    }
+
+    #service-container img {
+        width: 125px;
+        height: 125px;
+    }
+
+
+    #service-text-container h2 {
+        font-size: 20px;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    #services-container {
+        height: 500px;
+        padding: 0 20px;
+    }
+
+    #service-container img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    #services-container {
+        height: 600px;
+        padding: 0 0;
+        gap: 0px;
+    }
+    
+
+
+    #service-container {
+        width: 25%;
+    }
+
+    #service-container img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #service-text-container h2 {
+        font-size: 25px;
+    }
+    
+}
+
+
+@media only screen and (min-width: 1440px) {
+
+    #services-container {
+        height: 700px;
+        padding: 0 140px;
+    }
+    
+    #service-container img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #service-text-container h2 {
+        font-size: 35px;
+    }
+    
+}
+
+
+
+@media only screen and (min-width: 1920px) {
+
+    #services-container {
+        height: 800px;
+        padding: 0 200px;
+    }
+    
+    #service-container img {
+        width: 250px;
+        height: 250px;
+    }
+
+    #service-text-container h2 {
+        font-size: 35px;
+    }
+    
+}

@@ -1,0 +1,26 @@
+{
+    "slides": [
+      {
+        "image": "image.png",
+        "caption": "1 / 4"
+      },
+      {
+        "image": "image8.png",
+        "caption": "2 / 4"
+      },
+      {
+        "image": "image5.png",
+        "caption": "2 / 4"
+      },
+      {
+        "image": "image4.png",
+        "caption": "3 / 4"
+      },
+      {
+        "image": "image3.png",
+        "caption": "4 / 4"
+      }
+    ]
+  }
+  
+

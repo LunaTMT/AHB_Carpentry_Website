@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>404 Not Found</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/CODES/404.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/BASE/fonts.css') }}">
+</head>
+<body>
+    <div id="error-container">
+        <img src="{{ url_for('static', filename='images/codes/404.png') }}">
+
+        <p>We're sorry, but the page you're looking for doesn't exist.</p>
+        <p>Redirecting to the home page in <span id="countdown">5</span> seconds...</p>
+        
+        <!-- Optional: You can also include a link to manually redirect -->
+        <h3>If you are not redirected, <a href="{{ url_for('AHB.index') }}">click here</a>.</h3>
+    </div>
+
+    <script>
+        let count = 5;
+        const countdownElement = document.getElementById("countdown");
+        function countdown() {
+            countdownElement.textContent = count;
+            
+            if (count === 0) {
+                window.location.href = "{{ url_for('AHB.index') }}";
+            } else {
+                count--;
+                setTimeout(countdown, 1000); 
+            }
+        }
+    
+        countdown(); 
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!-- yourapp/templates/index.html -->
+{% extends "BASE/base.html" %}
+
+{% block title %}Contact - AHB{% endblock %}
+
+
+{% block styles %} 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/BASE/image_banner.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/4_CONTACT/2_contact_container.css') }}">
+{% endblock %}
+
+
+{% block content %}
+    {% include '4_CONTACT/1_image_banner.html' %}
+    {% include '4_CONTACT/2_contact_container.html' %}
+{% endblock %}

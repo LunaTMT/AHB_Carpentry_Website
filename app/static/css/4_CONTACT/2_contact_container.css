@@ -1,0 +1,321 @@
+#work-with-us-container {
+
+    width: 100%;
+    height: 75vh;
+
+    display: flex;
+    color: black;
+
+}
+
+#work-with-us-container h3 {
+    font-size: 30px;
+    text-align: left;
+}
+
+
+
+
+#left-inner-container {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 100%;
+
+}
+
+
+
+#right-inner-container {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction:column;
+
+    align-items: flex-start;
+ 
+}
+
+
+#map {
+    width: 100%;
+    height: 80%;
+    border:0;
+}
+
+#contact-form{
+    width: 100%;
+}
+
+
+#text-container{
+
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-size: 25px;
+  
+}
+
+
+
+#overlay-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+
+#overlay-form p {
+    align-self: flex-start;
+
+}
+
+#overlay-form label {
+    display: block;
+    width: 100%;
+
+}
+
+
+#form-name-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+
+
+
+/*Every single form box */
+.form-group {
+    width: 100%;
+
+    font-size: 30px;   
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+/* input boxes */
+.form-control { 
+    background-color: white;
+    border: 2px solid grey;
+    width: 100%;
+    height: 100%;
+}
+
+
+.button {
+    width: 25%;
+    height: auto;
+    font-size: 25px;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.2); /* Initial background color */
+    color: black; /* Initial text color */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Transition effect */
+    text-align: center;
+}
+
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+#submit-button-container{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+
+
+@media only screen and (min-width: 0px) {
+    #work-with-us-container{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        height: 1000px;
+    }
+
+    #work-with-us-container p{
+        margin-bottom: 5px;
+    }
+
+    #left-inner-container {
+        padding: 0 15px;
+    }
+
+    #left-inner-container h3 {
+        margin-bottom: 10px;
+    }
+    
+
+    #form-name-container {
+        flex-direction: column;
+    }
+
+    #overlay-form p {
+        font-size: 15px;
+    }
+
+    .form-group {
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+
+    .form-control {
+        padding-left: 5px;
+    }
+
+    #message-container{
+        height: 150px;
+        margin-bottom: 0;
+    }
+
+
+    #submit-button-container{
+        width: 100%;
+    }
+
+    #submit-button {
+        padding: 10px;
+        margin: 20px 0;
+        width: 60%;
+    }
+
+    #text-container{
+        font-size: 25px;
+    }
+    
+}
+
+
+@media only screen and (min-width: 320px) {
+
+
+    #overlay-form p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    #submit-button {
+        padding: 15px;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    #form-name-container{
+        flex-direction: row;
+    }
+
+    #left-inner-container {
+        padding: 0 20px;
+    }
+
+
+
+    #form-name-container{
+        gap: 20px;
+    }
+
+    #submit-button {
+        padding: 15px 0;
+        margin: 20px 0;
+        width: 30%;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+    #left-inner-container {
+        width: 60%;
+    }
+
+}
+
+
+@media only screen and (min-width: 1440px) {
+
+    #work-with-us-container{
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 650px;
+        padding: 20px 50px;
+    }
+
+    #left-inner-container {
+        width: 50%;
+    }
+
+    #left-inner-container h3{
+        text-align: center;
+    }
+
+    #right-inner-container{
+        width: 50%;
+    }
+
+    #left-inner-container h3{
+        font-size: 40px;
+    }
+
+    .form-group {
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+
+    #overlay-form p {
+        font-size: 20px;
+    }
+
+   
+
+}
+
+
+@media only screen and (min-width: 1920px) {
+
+    
+    #work-with-us-container{
+
+        height: 650px;
+        padding: 20px 300px;
+    }
+
+    
+    
+}

@@ -1,0 +1,114 @@
+
+footer {
+    width: 100%;
+    background-color: black; /* Optional background color */
+    color: grey;
+ 
+}
+
+#footer-container {
+    display: flex;
+    justify-content: center; /* Centers items in the footer */
+    align-items: center; /* Vertically aligns items */
+}
+
+#footer-container > div {
+    flex: 1; /* Each child div takes equal space */
+    text-align: center; /* Center text within each item */
+}
+
+#footer-logo-container {
+    flex:  2;
+}
+
+
+
+#footer-social-media-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+
+
+@media only screen and (min-width: 0px) {
+
+    footer {
+        height: 25vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #footer-text-container p {
+        font-size: 13px;
+    }
+
+    #footer-social-media-container {
+        gap: 10px;
+        
+    }
+
+    #footer-social-media-container img {
+        width: 40px;
+        
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+
+    footer {
+        height: 20vh;
+    }
+
+    #footer-container {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    footer{
+        height: 15vh;
+    }
+
+    #footer-container {
+        width: 100%;
+        height: 100%;
+        margin: 0 30px;
+    }
+}
+
+
+@media only screen and (min-width: 1440px) {
+
+    #footer-social-media-container img {
+        width: 60px;   
+    }
+
+    #footer-logo-container img {
+        width: 170px;
+    }
+
+    #footer-text-container p{
+        font-size: 17px;
+    }
+}
+
+
+@media only screen and (min-width: 1920px) {
+
+}

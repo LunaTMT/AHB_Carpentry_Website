@@ -1,0 +1,63 @@
+<div id="portfolio-container">
+    {% for residence_name, project in portfolio.items() %}
+        <div id="project-container">
+            <p>{{ residence_name }}</p>
+
+            <div id="photo-container">
+              
+                {% for photo in project.photos %}
+                    <!-- Create a unique ID for each image by combining the project name and photo name -->
+                    
+                    <div id="image-container">
+                        {% if current_user.is_authenticated %}
+                            <img id="cross" src="{{ url_for('static', filename='images/icons/cross.png') }}" alt="Delete Icon">
+                        {% endif %}
+    
+                        <img 
+                            id="portfolio-photo"
+                            class="thumbnail"
+                            src="{{ url_for('static', filename='images/portfolio/' ~ residence_name ~ '/' ~ photo) }}"
+                            data-large-src="{{ url_for('static', filename='images/portfolio/' ~ residence_name ~ '/' ~ photo) }}"
+                            data-residence-name="{{ residence_name }}"  
+                            data-image-name="{{ photo }}"
+                            alt="{{ residence_name }}">
+                    
+                    </div>
+
+                   
+                {% endfor %}
+            </div> <!-- Closing #photo-container here is correct -->
+
+         
+        </div>
+    {% endfor %}
+
+    {% if current_user.is_authenticated %}
+        <a id="add_button" class="dosis-header">ADD A NEW RESIDENCY</a>
+        
+        <div id="add_residency_form">
+            <form action="{{ url_for('AHB.portfolio') }}" method="post" enctype="multipart/form-data">
+                {{ form.hidden_tag() }}
+                {{ form.name.label }}
+                {{ form.name() }}
+                
+                {{ form.photos.label }}
+                {{ form.photos() }}
+                {% for error in form.photos.errors %}
+                    <span style="color: red;">[{{ error }}]</span><br>
+                {% endfor %}
+                
+                <p><input type="submit" value="Upload"></p>
+            </form>
+        </div>
+
+        <div id="grey-line"></div>
+    {% endif %}
+</div>
+
+<!-- The Modal -->
+<div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-image">
+    <div id="caption"></div>
+</div>

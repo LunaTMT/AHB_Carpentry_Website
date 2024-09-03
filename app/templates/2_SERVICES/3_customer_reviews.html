@@ -1,0 +1,28 @@
+
+<div id="customer-reviews-container">
+    
+    <div id="customer-reviews-title-container">
+        <h2>CUSTOMER REVIEWS</h2>
+    </div>
+
+    <div id="reviews-container">
+
+        {% for review in reviews %}
+
+            <div id="customer-container">
+                <p class="italic">"{{ review.review }}"</p>
+                <p class="italic" id="customer-name">{{ review.customer }}</p>
+            </div>
+
+        {% endfor %}
+
+        <!-- This needs to redirect to google businesses where the reviews are -->
+        <!--<button class="btn dosis-header">SEE MORE...</button>-->
+        
+        <!-- <a href="{{ url_for('AHB.portfolio') }}" class="dosis-header">SEE PORTFOLIO</a>  -->
+    </div>
+
+</div>
+
+
+

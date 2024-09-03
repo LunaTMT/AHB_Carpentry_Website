@@ -1,0 +1,15 @@
+
+<div id="instagram-container">
+    <a href="https://www.instagram.com/ahb_carpentry/" target="_blank">
+        <div id="instagram-top-container">
+            <p>AHB_CARPENTRY</p>
+            <img src="{{ url_for('static', filename='images/icons/instagram_black_inner.png') }}" alt="Instagram Icon">
+        </div>
+    </a>
+    
+    <div id="instagram-image-container">
+        {% for item in instagram_posts %}
+            <img src="{{ url_for('static', filename='images/instagram/' ~ item.image_filename) }}" alt="{{ item.alt }}">
+        {% endfor %}
+    </div>
+</div>

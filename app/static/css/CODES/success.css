@@ -1,0 +1,70 @@
+/* Reset default margin and padding for body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* Fallback font */
+    background-color: #f5f5f5; /* Light background color for contrast */
+}
+
+/* Success container styling */
+#success-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff; /* White background for the container */
+    border-radius: 10px; /* Rounded corners for a soft look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+img{
+    width: 400px;
+    height: auto;
+    
+}
+
+/* Heading styles */
+h1, h2, h3 {
+    font-family: 'NEOTERIC_REGULAR', Arial, sans-serif; /* Font for headings */
+    color: #333; /* Darker color for better readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Specific heading styles */
+h1 {
+    font-size: 4rem; /* Responsive font size for larger screens */
+    margin-bottom: 0.5rem; /* Space below the heading */
+}
+
+h2 {
+    font-size: 2.5rem; /* Slightly smaller than h1 */
+    margin-bottom: 1rem; /* Space below the heading */
+}
+
+h3 {
+    font-size: 1.5rem; /* Smaller than h2 */
+    color: #666; /* Lighter color for secondary text */
+}
+
+/* Paragraph styling */
+p {
+    font-size: 3rem; /* Large font size for countdown */
+    color: #007BFF; /* Bright blue color for emphasis */
+    margin: 1rem 0; /* Margin for spacing around the countdown */
+    font-weight: bold; /* Make the countdown stand out */
+}
+
+/* Link styling */
+a {
+    color: #007BFF; /* Bright blue color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Make the link text bold */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}

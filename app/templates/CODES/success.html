@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Message Sent</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/CODES/success.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/BASE/fonts.css') }}">
+</head>
+<body>
+    <div id="success-container">
+        <img src="{{ url_for('static', filename='images/codes/success.png') }}">
+        <h1>Success</h1>
+        <h1>{{ message }}</h1>
+        <h2>Redirecting to home page in </h2>
+        <p id="countdown" class="dosis-text">5</p> 
+
+
+        <!-- Optional: You can also include a link to manually redirect -->
+        <h3>If you are not redirected, <a href="{{ url_for('AHB.index') }}">click here</a>.</h3>
+    </div>
+
+    <script>
+        let count = 5;
+        const p_tag = document.getElementById("countdown")
+        function countdown() {
+            p_tag.textContent = count;
+            
+            if (count === 0) {
+                window.location.href = "{{ url_for('AHB.index') }}";
+            } else {
+                count--;
+                setTimeout(countdown, 1000); 
+            }
+        }
+    
+        countdown(); 
+    </script>
+    
+</body>
+</html>

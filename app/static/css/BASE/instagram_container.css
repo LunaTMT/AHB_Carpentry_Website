@@ -1,0 +1,208 @@
+#instagram-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 75vh;
+
+    overflow: hidden; /* Prevent overflow */
+
+    gap: 20px;
+
+}
+
+
+#instagram-top-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#instagram-top-container img{
+    width: 50px;
+    height: auto;
+}
+#instagram-top-container p{
+    font-size: 45px;
+    font-family: 'NEOTERIC_BOLD';
+}
+
+
+#instagram-image-container {
+
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap; /* Allows the images to wrap to the next line */
+    justify-content: center; /* Centers items horizontally within the container */
+    align-items: center; /* Centers items vertically within the container */
+    gap: 5px; /* Set identical gaps between the images */
+    overflow: hidden; /* Prevent overflow */
+    box-sizing: border-box; /* Include padding/borders in element dimensions */
+}
+
+#instagram-image-container img {
+    width: 125px;
+    height: 125px;
+    object-fit: cover; /* Ensure image covers the entire area */
+    max-width: 100%; /* Prevent the image from exceeding the container's width */
+    max-height: 100%; /* Prevent the image from exceeding the container's height */
+}
+
+/* Responsive adjustments */
+@media only screen and (min-width: 0px) {
+
+    #instagram-container {
+        margin-bottom: 30px;
+    }
+
+
+    #instagram-image-container {
+        width: 100%;
+
+    }
+
+    #instagram-image-container img {
+        width: 125px;
+        height: 125px;
+    }
+
+    
+    #instagram-top-container p{
+        font-size: 35px;
+    }
+
+    #instagram-top-container img{
+        width: 45px;
+    }
+    
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    #services-container{
+        width: 90%;
+    }
+
+    #instagram-container {
+        height: 40vh;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    #instagram-image-container img {
+        width: 125px;
+        height: 125px;
+    }
+
+    
+    #instagram-top-container p{
+        font-size: 35px;
+    }
+
+    #instagram-top-container img{
+        width: 35px;
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+    #instagram-container {
+        height: 50vh;
+    }
+
+    #instagram-image-container img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #instagram-top-container p{
+        font-size: 45px;
+    }
+
+    #instagram-top-container img{
+        width: 55px;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 1024px) {
+    #instagram-container {
+        height: 55vh;
+        width: 65%;
+        gap: 45px;
+    }
+
+    #instagram-image-container img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #instagram-top-container p{
+        font-size: 55px;
+    }
+
+    #instagram-top-container img{
+        width: 60px;
+    }
+}
+
+
+@media only screen and (min-width: 1440px) {
+    #instagram-container {
+        height: 65vh;
+        width: 60%;
+        gap: 20px;
+    }
+
+    #instagram-image-container img {
+        width: 175px;
+        height: 175px;
+    }
+
+    #instagram-top-container p{
+        font-size: 55px;
+    }
+
+    #instagram-top-container img{
+        width: 60px;
+    }
+}
+
+
+@media only screen and (min-width: 1920px) {
+    #instagram-container {
+        height: 65vh;
+        width: 50%;
+        gap: 45px;
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+
+    #instagram-image-container img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    #instagram-top-container {
+        padding-top: 0;
+    }
+
+    #instagram-top-container p{
+        font-size: 55px;
+    }
+
+    #instagram-top-container img{
+        width: 60px;
+    }
+
+}

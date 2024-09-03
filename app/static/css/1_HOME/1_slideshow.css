@@ -1,0 +1,129 @@
+/* Slideshow container */
+.slideshow-container {
+  width: 100vw; 
+  height: 88vh; /* Adjusted to cover full viewport height */
+  position: relative;
+  overflow-x: hidden; /* Hide horizontal overflow */
+  overflow-y: hidden  ; /* Display vertical scrollbar if content exceeds viewport */
+  background-color: black;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Full-width images with number and caption text */
+.mySlides img {
+  width: auto; 
+  height: 88vh; /* Ensures images cover the full height of the viewport */
+  object-fit: cover; /* Ensures images maintain aspect ratio and cover the container */
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 2; /* Ensure buttons are above the dots */
+  font-size: 45px;
+}
+
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+
+/* Dot container */
+.dot-container {
+  overflow-x: hidden;
+  position: absolute;
+  bottom: 20px; 
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  z-index: 3; /* Ensure dots are above the images and buttons */
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Active dot */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+@media only screen and (min-width: 0px) {
+  .prev, .next {
+    font-size: 25px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .prev, .next {
+    font-size: 30px;
+  }
+
+  .dot {
+    width: 15px;
+    height: 15px;
+
+  }
+
+}

@@ -1,0 +1,84 @@
+/* Image banner container */
+.image-banner-container {
+    width: 100%;
+    height: 30vh;
+    position: relative; /* Ensures the text can be absolutely positioned within the container */
+    overflow: hidden; /* Ensures any overflow content is hidden */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;  
+
+}
+
+/* Image styling */
+.image-banner-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distorting */
+    display: block; /* Removes any inline spacing */
+}
+
+/* Text inside the banner */
+.image-banner-container p {
+    width: 100%;
+    text-align: center;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Centers the text both horizontally and vertically */
+    color: white; 
+    font-size: 6em;
+    z-index: 1; 
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+/* Responsive adjustments */
+
+
+@media only screen and (min-width: 0px) {
+    .image-banner-container p {
+        font-size: 3em; /* Adjust font size for smaller screens */
+    }
+
+    .image-banner-container{
+        margin-bottom: 20px;
+    }
+
+    .image-banner-container {
+        height: 200px; /* Adjust height for very small screens */
+    }
+}
+
+
+@media only screen and (min-width: 320px) {
+    .image-banner-container p {
+        font-size: 3.5em; /* Adjust font size for smaller screens */
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .image-banner-container p {
+        font-size: 4em; /* Adjust font size for smaller screens */
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .image-banner-container {
+        height: 250px; /* Adjust height for screens 768px and above */
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .image-banner-container {
+        height: 300px; /* Keep original height for larger screens */
+    }
+
+    .image-banner-container p {
+        font-size: 6em; /* Adjust font size for smaller screens */
+    }
+}
+

@@ -1,0 +1,295 @@
+#work-with-us-container {
+    position: relative;
+    display: flex;
+    overflow: hidden; 
+    color: white;
+    background-color: black;
+}
+
+
+
+#work-with-us-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    filter: brightness(40%);
+
+}
+
+
+#work-with-us-inner-container {
+    position: absolute;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* title */
+#work-with-us-inner-top-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#overlay-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+#overlay-form p {
+    align-self: flex-start;
+}
+
+#overlay-form label {
+    display: block;
+}
+
+#form-name-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+
+
+
+
+
+/*Every single form box */
+.form-group {
+    margin-bottom: 3%;
+    width: 100%;
+    font-size: 30px;
+}
+
+
+/* input boxes */
+.form-control { 
+    background-color: white;
+    height: 4vh;
+    font-size: 10%;
+    width: 100%;
+    font-size: 50%;
+    padding-left: 10px;
+
+}
+
+
+
+
+#message-container {
+    height: 10vh;
+}
+
+.button {
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
+    font-size: 25px;
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.2); /* Initial background color */
+    color: white; /* Initial text color */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Transition effect */
+    width: 150px; /* Set a fixed width */
+    height: 50px; /* Set a fixed height */
+    text-align: center;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+#submit-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 300px) {
+    #work-with-us-container {
+        width: 100%;
+        height: 80vh;
+        padding-top: 40px;
+    }
+
+    #work-with-us-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+
+    #work-with-us-inner-container{
+        width: 100%;
+    }
+
+    #work-with-us-inner-top-container {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #work-with-us-inner-top-container h1{
+        font-size: 40px;
+    }
+
+
+    #form-name-container {
+        width: 90vw;
+        flex-direction: column;
+    }
+
+    #overlay-form p {
+        font-size: 20px;
+    }
+
+    #form-name-container label {
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: -7px 
+    }
+
+    #email-address {
+        margin-bottom: -8px;
+    }
+
+    #message {
+        margin-bottom: 5px;
+    }
+
+    #message-container textarea {
+        height: 100%;
+
+    }
+
+    .button{
+        width: 150px;
+        height: 50px;
+        padding: 30px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+}   
+
+
+@media only screen and (min-width: 600px) {
+    #work-with-us-inner-top-container {
+        margin-top: 30px;
+    }
+
+    #work-with-us-inner-top-container h1{
+
+        font-size: 50px;
+    }
+
+    #work-with-us-inner-top-container p{
+        font-size: 17px;
+    }
+
+    #form-name-container{
+        flex-direction: row;
+        gap: 10px;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    #overlay-form{
+        width: 70%;
+    }
+
+    #form-name-container{
+        width: 100%;
+
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #overlay-form{
+        width: 60%;
+    }   
+
+    #message-container{
+        height: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 1440px) {
+    #overlay-form{
+        width: 50%;
+        height: 100%;
+    }   
+
+    #work-with-us-inner-container {
+        height: 80%;
+    }
+
+    #work-with-us-inner-top-container h1{
+        font-size: 70px;
+    }
+
+    #work-with-us-inner-top-container p{
+        font-size: 20px;
+    }
+
+    #message-container{
+        height: 100%;
+    }
+
+
+    #overlay-form p {
+        font-size: 30px;
+    }
+
+    #form-name-container label {
+        font-size: 25px;
+
+    }
+
+}
+
+
+@media only screen and (min-width: 1920px) {
+
+    #work-with-us-container {
+        width: 100%;
+        height: 100vh;
+        padding-top: 30px;
+    }
+
+    #email-address{
+        margin-bottom: 2px;
+    }
+
+    #form-name-container label{
+        margin-bottom: 2px;
+    }
+
+    #message-container{
+        height: 200px;
+    }
+}
