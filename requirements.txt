@@ -1,4 +1,5 @@
 aeidon==1.10.1
+alembic==1.13.2
 apt-xapian-index==0.49
 apturl==0.5.2
 attrs==21.2.0
@@ -26,7 +27,11 @@ distro-info==1.1+ubuntu0.2
 duplicity==0.8.21
 fasteners==0.14.1
 Flask==3.0.2
+Flask-Login==0.6.3
+Flask-Mail==0.10.0
+Flask-Migrate==4.0.7
 Flask-SQLAlchemy==3.1.1
+Flask-WTF==1.2.1
 fuse-python==1.0.2
 future==0.18.2
 gpg==1.16.0
@@ -122,6 +127,7 @@ wadllib==1.3.6
 webencodings==0.5.1
 websockets==9.1
 Werkzeug==3.0.1
+WTForms==3.1.2
 xdg==5
 xkit==0.0.0
 yt-dlp==2022.4.8
