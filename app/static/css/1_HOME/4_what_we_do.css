@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     width: 100%; 
-    height: 100vh;
+
     z-index: 1;
     gap: 20px;
     padding: 20px;
@@ -16,21 +16,24 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 40%
-}
-
-#what-we-do-container-left-side img {
-    width: auto;
-    height: 100%;
+    height: 30%
 }
 
 #what-we-do-container-right-side {
     width: 100%;
-    height: 60%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
+
+
+#what-we-do-container-left-side img {
+    width: auto;
+    height: 100vw;
+}
+
 
 
 
@@ -79,96 +82,118 @@
 }
 
 
-
-@media only screen and (min-width: 375px) {
-    #what-we-do-container {
-        height: 95vh;
+@media only screen and (min-width: 300px) {
+    #what-we-do-container-left-side{
+        margin:0;
     }
+
+
 }
 
+@media only screen and (min-width: 450px) {
+    #what-we-do-container-right-side a {
+        width: 40%;
+        padding: 10px;
+    }
+
+    #what-we-do-container-right-side {
+        justify-content: center;
+    }
+
+    #what-we-do-container-left-side img {
+        height: clamp(400px, 450px, 450px);
+        width: auto;
+    }
+}
 
 
 
 @media only screen and (min-width: 600px) {
     #what-we-do-container {
-        height: 65vh;
+        height: 550px;
         flex-direction: row;
         align-items: flex-start;
-        gap: 40px;
+        gap: 20px;
     }
 
     #what-we-do-container-left-side {
         height: 100%;
         width: 50%;
-      
     }
 
     
     #what-we-do-container-left-side img{
-        height: 360px;
-        width: auto;
-        margin-top: -50px;
+        width: 100%;
+        height: auto;
     }
 
+    #what-we-do-container-right-side {
+        height: 100%;
+        width: 50%;
+    }
 
 }
 
 
 @media only screen and (min-width: 768px) {
-    #what-we-do-container {
-        height: 55vh;
-    }
+
+ 
 
     #what-we-do-container-right-side a {
         width: 30%;
     }
 
-    #what-we-do-container-left-side img{
-        height: 400px;
-        width: auto;
-    }
 
     #what-we-do-container-right-side h1{
         font-size: 40px;
     }
+
+
+    #what-we-do-container-left-side img {
+        height: clamp(200px, 90%, 400px);
+        width: auto;
+    }
 }
+
+
+@media only screen and (min-width: 928px) {
+
+ 
+
+}
+
+
 
 @media only screen and (min-width: 1024px) {
-    #what-we-do-container {
-        height: 50vh;
+    #what-we-do-container-right-side{
+        align-items: flex-start;
+        justify-content: center;
+        text-align: left;
     }
 
-    #what-we-do-container-left-side img{
-        height: 380px;
+    #what-we-do-container-left-side{
+
+        justify-content: flex-end;
+    }
+
+    #what-we-do-container-left-side img {
+        height: clamp(200px, 90%, 400px);
         width: auto;
-        margin: 0;
     }
 }
+
+@media only screen and (min-width: 1250px) {
+    #what-we-do-container-right-side{
+        padding-right: 10vw;
+    }
+}
+
 
 
 @media only screen and (min-width: 1440px) {
-    #what-we-do-container{
-        padding: 20px 200px;
-        gap: 50px;
-        height: 90vh;
 
-    }
-
-
-    #what-we-do-container-left-side{
-        width: 50%;
-       
-    }
-
-    #what-we-do-container-right-side{
-        width: 50%;
-       
-    }
-
-    #what-we-do-container-left-side img{
-        height: 600px;
-        width: auto;
-        
+    #what-we-do-container {
+        height: 800px;
     }
 
     #what-we-do-container-right-side h1{
@@ -181,24 +206,21 @@
 
 
     #what-we-do-container-right-side ol {
-        padding-left: 20px;
         font-size: 25px;
    
     }
 
     #what-we-do-container-right-side a {
-        width: 45%;
-        padding: 15px;
-        margin-bottom: 10px;
-        border: 2px solid black;
-        background-color: transparent; /* Initial background color */
-        color: black; /* Initial text color */
-        transition: background-color 0.5s ease, color 0.5s ease; /* Transition effect */
-        text-decoration: none;
-        text-align: center;
+        width: 50%;
+        padding: 20px;
+        margin-bottom: 10px;        
         font-size: 25px;
     }
-      
+
+    #what-we-do-container-left-side img {
+        height: clamp(500px, 550px, 700px);
+        width: auto;
+    }
 
 
 }
@@ -206,10 +228,22 @@
 
 
 @media only screen and (min-width: 1920px) {
-    #what-we-do-container{
 
-        height: 70vh;
-
+    #what-we-do-container {
+        gap: 50px;
     }
-    
+
+
+    #what-we-do-container-left-side {
+        height: 80%;
+        margin:auto;
+    }
+
+    #what-we-do-container-right-side a {
+        width:35%;
+        padding: 20px;
+        margin-bottom: 10px;        
+        font-size: 25px;
+    }
+
 }

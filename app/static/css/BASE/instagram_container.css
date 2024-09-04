@@ -1,13 +1,13 @@
 #instagram-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 90%;
-    height: 75vh;
+    height: auto;
 
     overflow: hidden; /* Prevent overflow */
-
+    padding: 20px;
     gap: 20px;
 
 }
@@ -18,6 +18,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    
 }
 
 
@@ -57,17 +59,17 @@
 
     #instagram-container {
         margin-bottom: 30px;
+        height: auto;
     }
 
 
     #instagram-image-container {
         width: 100%;
-
     }
 
     #instagram-image-container img {
-        width: 125px;
-        height: 125px;
+        width: 100px;
+        height: 100px;
     }
 
     
@@ -82,39 +84,64 @@
 }
 
 
+@media only screen and (min-width: 389px) {
+    #instagram-image-container img {
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+
+@media only screen and (min-width: 428px) {
+
+
+    #instagram-top-container p{
+        font-size: 40px;
+    }
+
+    #instagram-top-container img{
+        width: 50px;
+    }
+
+    #instagram-image-container img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media only screen and (min-width: 556px) {
+    #instagram-image-container img {
+        width: 175px;
+        height: 175px;
+    }
+}
+
+
+
+
+
+
+
 @media only screen and (min-width: 600px) {
 
     #services-container{
         width: 90%;
     }
 
-    #instagram-container {
-        height: 40vh;
-        margin-bottom: 30px;
-        margin-top: 30px;
-    }
 
-    #instagram-image-container img {
-        width: 125px;
-        height: 125px;
-    }
 
-    
-    #instagram-top-container p{
-        font-size: 35px;
-    }
 
-    #instagram-top-container img{
-        width: 35px;
-    }
 }
 
 
 
 @media only screen and (min-width: 768px) {
 
+
+
     #instagram-container {
-        height: 50vh;
+        height: clamp(700px 750px 800px)
     }
 
     #instagram-image-container img {
@@ -122,29 +149,26 @@
         height: 150px;
     }
 
-    #instagram-top-container p{
-        font-size: 45px;
-    }
-
-    #instagram-top-container img{
-        width: 55px;
-    }
 
 }
 
-
+@media only screen and (min-width: 900px) {
+    #instagram-image-container img {
+        width: 175px;
+        height: 175px;
+    }
+}
 
 
 @media only screen and (min-width: 1024px) {
-    #instagram-container {
-        height: 55vh;
-        width: 65%;
-        gap: 45px;
+
+    #instagram-container{
+        gap: 40px;
     }
 
     #instagram-image-container img {
-        width: 150px;
-        height: 150px;
+        width: 175px;
+        height: 175px;
     }
 
     #instagram-top-container p{
