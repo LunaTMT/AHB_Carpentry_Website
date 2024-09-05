@@ -162,9 +162,12 @@
 
 @media only screen and (min-width: 1024px) {
 
-    #instagram-container{
-        gap: 40px;
+    #instagram-container {
+        height: 550px;
+        width: 80%;
+        gap: 20px;
     }
+    
 
     #instagram-image-container img {
         width: 175px;
@@ -181,9 +184,15 @@
 }
 
 
+@media only screen and (min-width: 1169px) {
+    #instagram-container {
+        width: 70%;
+    }
+}
+
 @media only screen and (min-width: 1440px) {
     #instagram-container {
-        height: 65vh;
+        height: 550px;
         width: 60%;
         gap: 20px;
     }
@@ -205,10 +214,10 @@
 
 @media only screen and (min-width: 1920px) {
     #instagram-container {
-        height: 65vh;
+        height: 600px;
         width: 50%;
-        gap: 45px;
-        justify-content: flex-start;
+        
+    
         margin-top: 20px;
     }
 
