@@ -169,6 +169,7 @@
         align-items: flex-start;
         justify-content: center;
         text-align: left;
+        padding-right: 70px;
     }
 
     #what-we-do-container-left-side{

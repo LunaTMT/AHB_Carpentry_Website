@@ -186,6 +186,13 @@
 }
 
 
+@media only screen and (min-width: 375px) {
+    #photo-container {
+        flex-direction: row;
+    }
+}
+
+
 
 
 @media only screen and (min-width: 600px) {

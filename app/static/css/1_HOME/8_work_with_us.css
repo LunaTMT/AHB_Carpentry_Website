@@ -86,11 +86,11 @@
 }
 
 
+#message-container textarea {
+    height: 100%;
 
-
-#message-container {
-    height: 80px;
 }
+
 
 .button {
     display: flex; /* Enables flexbox layout */
@@ -129,7 +129,7 @@
 @media only screen and (min-width: 300px) {
     #work-with-us-container {
         width: 100%;
-        height: 700px;
+        height: 800px;
         padding-top: 40px;
     }
 
@@ -178,10 +178,13 @@
         margin-bottom: 5px;
     }
 
-    #message-container textarea {
-        height: 100%;
 
+    #message-container {
+        height: 200px;
     }
+
+
+   
 
     .button{
         width: 150px;
@@ -232,8 +235,9 @@
         width: 60%;
     }   
 
-    #message-container{
-        height: 100%;
+
+    #message-container {
+        height: 200px;
     }
 }
 
@@ -242,8 +246,8 @@
     
     #work-with-us-container {
         width: 100%;
-        height: 800px;
-       
+        height: 950px;
+        padding-top: 75px;
     }
 
     #overlay-form{
@@ -274,7 +278,10 @@
 
     #form-name-container label {
         font-size: 25px;
+    }
 
+    #message-container {
+        height: 300px;
     }
 
 }
@@ -283,6 +290,7 @@
 @media only screen and (min-width: 1920px) {
 
     #work-with-us-container {
+        padding-top: 70px;
         width: 100%;
         height: 900px;
        
