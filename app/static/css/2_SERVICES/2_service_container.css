@@ -16,14 +16,6 @@
     
 }   
 
-#service-text-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-}
-
 
 
 
@@ -31,19 +23,16 @@
     border-radius: 5px;
 }
 
-#service-text-container h2 {
+
+
+#service-container p {
+    font-size: 35px;
+    font-family: 'NEOTERIC_BOLD';
+    color: black;
     text-align: center;
+
 }
 
-#service-text-container p {
-    text-align: center;
-    display: none;
-}
-
-
-#service-container:hover .invisible {
-    opacity: 1; 
-}
 
 
 
@@ -52,50 +41,53 @@
 @media only screen and (min-width: 0px) {
     #services-container{
         height: 2000px;
+        margin: 20px 0;
     }
 
     #service-container {
-        margin-bottom: 30px;
+        
         width: 100%;
+        gap: 10px;
     }
 
     #service-container img {
         width: 200px;
         height: 200px;
     }
-
-    #service-text-container {
-        height: 10%;
-    }
-
-    #service-text-container h2 {
-        margin-top: 10px;
-    }
-    
 }
+
 
 
 @media only screen and (min-width: 600px) {
 
+    
 
     #services-container {
-        width: 10%;
-        height: 450px;
+        width: 100%;
+        height: 400px;
+        margin: 10px 0;
     }
 
     #service-container {
         width: 25%;
+        height: 155px;
+       
     }
 
+    #services-container p {
+        font-size: 20px;
+        width: 100%;
+        height: auto;
+    }   
+
     #service-container img {
+
         width: 125px;
         height: 125px;
     }
 
 
-    #service-text-container h2 {
-        font-size: 20px;
-    }
+
 
 }
 
@@ -104,21 +96,30 @@
 
     #services-container {
         height: 500px;
-        padding: 0 20px;
+        width: 100%;
+        margin: 15px 0;
+        
     }
 
     #service-container img {
         width: 150px;
         height: 150px;
     }
+
+    #service-container p {
+    
+        font-size: 25px;
+        line-height: 25px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
     
     #services-container {
-        height: 600px;
+        height: 700px;
         padding: 0 0;
         gap: 0px;
+        padding: 15px 0
     }
     
 
@@ -132,9 +133,11 @@
         height: 200px;
     }
 
-    #service-text-container h2 {
-        font-size: 25px;
+    #service-container p {   
+        font-size: 35px;
+        line-height: 35px;
     }
+
     
 }
 
@@ -143,18 +146,23 @@
 
     #services-container {
         height: 700px;
-        padding: 0 140px;
+        padding: 40px 140px;
     }
     
+
+
     #service-container img {
         width: 200px;
         height: 200px;
     }
 
-    #service-text-container h2 {
-        font-size: 35px;
+    #service-container p {
+        
+        font-size: 40px;
+        line-height: 40px;
+        
     }
-    
+
 }
 
 
@@ -171,8 +179,5 @@
         height: 250px;
     }
 
-    #service-text-container h2 {
-        font-size: 35px;
-    }
-    
+
 }

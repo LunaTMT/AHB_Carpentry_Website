@@ -37,7 +37,12 @@
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  display: block; /* Ensure it's not set to 'none' */
+  visibility: visible; /* Ensure it's not hidden */
+  opacity: 1;
 }
+
+
 
 
   .italic {

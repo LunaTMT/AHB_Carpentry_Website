@@ -42,9 +42,7 @@
         font-size: 3em; /* Adjust font size for smaller screens */
     }
 
-    .image-banner-container{
-        margin-bottom: 20px;
-    }
+
 
     .image-banner-container {
         height: 200px; /* Adjust height for very small screens */

@@ -1,6 +1,11 @@
 {
     "services": [
         {
+            "name": "Door linings",
+            "description": "Providing and installing door linings for a proper door fitting.",
+            "image": "door_linings2.png"
+        },
+        {
             "name": "Skirting",
             "description": "Installation of skirting boards to enhance the look of your rooms.",
             "image": "skirting2.png"
@@ -9,11 +14,6 @@
             "name": "Architrave",
             "description": "Fitting architraves around doors and windows for a neat finish.",
             "image": "architrave2.png"
-        },
-        {
-            "name": "Door linings",
-            "description": "Providing and installing door linings for a proper door fitting.",
-            "image": "door_linings2.png"
         },
         {
             "name": "Door Fitting",
