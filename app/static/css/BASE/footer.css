@@ -35,7 +35,7 @@ footer {
 @media only screen and (min-width: 0px) {
 
     footer {
-        height: 25vh;
+        height: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -69,7 +69,7 @@ footer {
 @media only screen and (min-width: 600px) {
 
     footer {
-        height: 20vh;
+        height: 100px;
     }
 
     #footer-container {
@@ -82,7 +82,7 @@ footer {
 
 @media only screen and (min-width: 768px) {
     footer{
-        height: 15vh;
+        height: 100px;
     }
 
     #footer-container {
@@ -94,6 +94,10 @@ footer {
 
 
 @media only screen and (min-width: 1440px) {
+
+    footer{
+        height: 125px;
+    }
 
     #footer-social-media-container img {
         width: 60px;   

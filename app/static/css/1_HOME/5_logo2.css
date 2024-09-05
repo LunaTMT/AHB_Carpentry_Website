@@ -46,6 +46,10 @@
 
 @media only screen and (min-width: 0px) {
 
+    #logo2-container {
+        height: 800px;
+    }
+
     #logo2-container-logo_image {
         border: 5px solid white;
         width: 150px;
@@ -84,9 +88,13 @@
 
 
 @media only screen and (min-width: 600px) {
+
     #logo2-container {
-        height: 100vh;
+        height: 1000px;
     }
+
+
+
     #logo2-container-logo_image {
         width: 250px;
         height: auto;

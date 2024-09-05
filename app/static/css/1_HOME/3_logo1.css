@@ -9,6 +9,8 @@
     background-color: aqua;
 }
 
+
+
 #logo1-container img {
     position: absolute;
     width: 100%; /* Make the image cover the full width of the container */
@@ -36,6 +38,8 @@
     #logo1-container {
         height: 60vh; /* Container height */
     }
+
+
 }
 
 

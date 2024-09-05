@@ -2,12 +2,12 @@
     {% for residence_name, project in portfolio.items() %}
         <div id="project-container">
             <p>{{ residence_name }}</p>
-
-            <div id="photo-container">
-              
-                {% for photo in project.photos %}
-                    <!-- Create a unique ID for each image by combining the project name and photo name -->
-                    
+            <div id="test">
+                <div id="photo-container">
+                
+                    {% for photo in project.photos %}
+                        <!-- Create a unique ID for each image by combining the project name and photo name -->
+                     
                     <div id="image-container">
                         {% if current_user.is_authenticated %}
                             <img id="cross" src="{{ url_for('static', filename='images/icons/cross.png') }}" alt="Delete Icon">
@@ -23,11 +23,11 @@
                             alt="{{ residence_name }}">
                     
                     </div>
-
-                   
-                {% endfor %}
-            </div> <!-- Closing #photo-container here is correct -->
-
+                  
+                    
+                    {% endfor %}
+                </div> <!-- Closing #photo-container here is correct -->
+            </div>
          
         </div>
     {% endfor %}
